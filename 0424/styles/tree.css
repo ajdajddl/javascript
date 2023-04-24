@@ -1,0 +1,39 @@
+body {}
+.top a {
+    font-family: 'Noto Serif KR';
+    position: fixed; bottom:0; right: 0; color:#fff; font-weight: 500; 
+    border: 2px solid #fff; border-radius: 10px; padding:10px; margin:20px;
+}
+header {
+    position: fixed; top:0; width:100%; z-index:2;
+    display: flex; justify-content: space-between; align-items: center;
+    padding:10px 40px;
+}
+header h1 {}
+header h1 a {}
+header h1 a img {}
+header a {color:#fff; font-family: 'Noto Serif KR';}
+/* -------------- */
+main {}
+main .wrap {width:100%; height: 100vh; }
+main .wrap .bg1 h1 {}
+main .wrap .bg {
+    background-repeat: no-repeat; background-size: 200%;
+    background-position: center; height: 100%; padding:70px;
+}
+main .wrap .bg1 {background-image: url(../images/main_bg_new2.jpg); background-attachment: fixed;}
+main .wrap .bg2 {background-image: url(../images/main_con2_bg.jpg); background-attachment: fixed;}
+main .wrap .bg3 {background-image: url(../images/main_con3_bg.jpg);background-attachment: fixed;}
+main .wrap .bg4 {background-image: url(../images/main_con5_bg-.jpg);}
+main .wrap .bg h1 {font-family: 'Noto Serif KR';  color:#fff; font-size:3rem; font-weight: 600; padding-bottom:25px; margin-top:15px;}
+main .wrap .bg p {color:#fff;  line-height:1.6; font-family: 'Noto Serif KR';}
+main .wrap .bg1 h1 {text-align: center; line-height: 100vh;}
+/* ----------------- */
+footer {background: #000; }
+footer .btn {
+    display: flex; justify-content: space-between; align-items: center;
+    width:1400px; margin:0 auto; padding:20px 0;
+}
+footer a {}
+footer a img {}
+footer p {color:#fff; font-family: 'Noto Serif KR';}

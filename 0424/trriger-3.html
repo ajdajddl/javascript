@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- plugin cdn JS 연결 필수 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- CSS 연결 -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <style>
+        /*부모 상관없이 우선순위로 정해라*/
+        .opacity {
+            opacity: 1 !important;
+            transform:rotate(360deg);
+            border-radius:50%;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <main>
+        <div class="wrap wrap1">
+            <div class="bg bg1">
+                <h1>그랜드 조선 부산 호텔</h1>
+            </div>
+        </div>
+        <div class="wrap wrap2">
+            <div class="bg bg2">
+                <h1>Grand Josun Busan Hotel</h1>
+            </div>
+        </div>
+        <div class="wrap wrap3">
+            <div class="bg bg3">
+                <h1>편안한 객실 최상의 서비스</h1>
+            </div>
+        </div>
+        <div class="wrap wrap4">
+            <div class="bg bg4">
+                <h1>최고의 휴가를 그랜드 조선 부산호텔과 함께하세요</h1>
+            </div>
+        </div>
+    </main>
+    <footer>footer</footer>
+    <!-- 
+        plugin
+        완성된 기능을 담은 함수 - 개발자 무료/ 유료 배포
+        약간의 옵션 변경으로 사용 가능
+    -->
+    <script>
+        ScrollTrigger.create({
+            trigger:'.bg2',
+            start:'0 70%',
+            end:'100% 0',
+            markers:true,
+            toggleClass:'opacity'
+        })
+        /*
+        ScrollTrigger.create({trigger:'대상'})//뷰포트 대상 따로 작성X
+        SCrollTrigger.create({
+            trigger:'대상',
+            속성:값, 속성:값
+            toggleClass:'클래스명' //하나의 버튼이 두가지 기능을 번갈아 작동하는것
+        })
+        */
+    </script>
+</body>
+</html>
